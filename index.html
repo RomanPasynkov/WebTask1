@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Задание 1</h1>
+<h2>Список ссылок</h2>
+<ul>
+    <li><a href="http://kubsu.ru/">Абсолютная ссылка (http)</a></li>
+    <li><a href="https://kubsu.ru/">Абсолютная ссылка (https)</a></li>
+    <li><a href="https://kubsu.ru/"><img src="./image.jpg" alt="Ссылка-изображение" width="200px" height="150px"></a></li>
+    <li><a href="/about/">Сокращенная на внутреннюю страницу</a></li>
+    <li><a href="/">Сокращенная на главную</a></li>
+    <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="https://example.com/page?x=1&y=2&z=3">Ссылка с 3 параметрами</a></li>
+    <li><a href="https://example.com/item?id=123">Ссылка с id</a></li>
+    <li><a href="./page.html">Относительная ссылка (текущий каталог)</a></li>
+    <li><a href="about/page.html">Относительная ссылка (каталог about)</a></li>
+    <li><a href="../page.html">Относительная ссылка (уровнем выше)</a></li>
+    <li><a href="../../page.html">Относительная ссылка (двумя уровнями выше)</a></li>
+    <li>Это <a href="https://kubsu.ru/">контекстная ссылка</a> внутри абзаца</li>
+    <li><a href="https://example.com/page#section1">Ссылка на фрагмент стороннего сайта</a></li>
+    <li>
+        <img src="https://via.placeholder.com/300x150" alt="Пример карты" usemap="#map1">
+        <map name="map1">
+            <area shape="rect" coords="0,0,100,150" href="https://kubsu.ru/" alt="Прямоугольная область">
+            <area shape="circle" coords="200,75,50" href="https://example.com" alt="Круглая область">
+        </map>
+    </li>
+    <li><a href="">Ссылка с пустым href</a></li>
+    <li><a>Ссылка без href</a></li>
+    <li><a href="https://example.com/" rel="nofollow">Запрещена для перехода поисковиком</a></li>
+    <li><a href="https://example.com/" rel="nofollow">Запрещена для индексации</a></li>
+    <li>
+        <ol>
+            <li><a href="https://example.com" title="Первая ссылка">Первая</a></li>
+            <li><a href="https://kubsu.ru" title="Вторая ссылка">Вторая</a></li>
+            <li><a href="https://google.com" title="Третья ссылка">Третья</a></li>
+        </ol>
+    </li>
+    <li><a href="ftp://user:password@example.com/myfile.zip">Ссылка на файл FTP</a></li>
+</ul>
+
+<h2 id="fragment">Форма</h2>
+<form action="#" method="post">
+    <label>ФИО: <input type="text" name="fio" required></label><br>
+    <label>Телефон: <input type="tel" name="phone" required></label><br>
+    <label>Email: <input type="email" name="email" required></label><br>
+    <label>Дата рождения: <input type="date" name="birthdate"></label><br>
+
+    <label>Пол:</label><br>
+    <label><input type="radio" name="gender" value="male"> Мужской</label>
+    <label><input type="radio" name="gender" value="female"> Женский</label><br>
+
+    <label>Любимый язык программирования:</label><br>
+    <select name="languages[]" multiple>
+        <option>Pascal</option>
+        <option>C</option>
+        <option>C++</option>
+        <option>JavaScript</option>
+        <option>PHP</option>
+        <option>Python</option>
+        <option>Java</option>
+        <option>Haskel</option>
+        <option>Clojure</option>
+        <option>Prolog</option>
+        <option>Scala</option>
+    </select><br>
+
+    <label>Биография:<br>
+        <textarea name="bio" rows="5" cols="40"></textarea>
+    </label><br>
+
+    <label><input type="checkbox" name="agree" required> С контрактом ознакомлен(а)</label><br>
+
+    <button type="submit">Сохранить</button>
+</form>
+</body>
+</html>
